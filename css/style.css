@@ -104,13 +104,19 @@ gap: 50px;
 .nav-tel-icons {
   fill: currentColor;
   margin-right: 10px;
-  align-items: center;
+}
+
+.nav-tel-icons:hover {
+  fill: var(--accent-color);
 }
 
 .nav-mail-icons {
   fill: currentColor;
   margin-right: 10px;
-  align-items: center;
+}
+
+.nav-mail-icons:hover {
+  fill: var(--accent-color);
 }
 
 .nav-list:not(:last-child) {
@@ -135,6 +141,8 @@ gap: 50px;
   line-height: 1.14; 
   letter-spacing: 0.02em; 
   color: var(--primary-text-color);
+  display: contents;
+  align-items: center;
 }
 
 .contact-link:hover,
@@ -148,8 +156,10 @@ gap: 50px;
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/img_hero_bg.jpg");
     background-repeat: no-repeat;
-    background-color: cover;
+    background-size: cover;
     background-position: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -341,6 +351,7 @@ gap: 50px;
 
 .team-soc-link:hover {
   background-color: var(--accent-color);
+  color: red;
 }
 
 .team-soc-icons {
@@ -356,6 +367,11 @@ gap: 50px;
   gap: var(--margin-right);
 }
 
+.client-link {
+  width: 170px;
+  height: 92px;
+}
+
 .client-soc-link {
   width: 100%;
   height: 100%;
@@ -365,7 +381,6 @@ gap: 50px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   background-color: var(--primary-white-color);
-  padding: 16px 32px;
 }
 
 .client-soc-link:hover .client-soc-icons {
@@ -378,8 +393,14 @@ gap: 50px;
     padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-address-container {
-  display: inline-block;
+  min-width: 321px;
+  margin-right: 70px;
 }
 
 .logo-footer {
@@ -419,9 +440,6 @@ gap: 50px;
 }
 
 .social-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .social-title {
@@ -432,17 +450,11 @@ margin-bottom: 20px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-bottom: 20px;
-display: flex;
-justify-content: center;
-align-items: center;
 }
 
 .social-list {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-width: 206px;
-  height: 80px;
 }
 
 .social-items {
@@ -501,6 +513,7 @@ align-items: center;
 .btn:focus {
   background: var(--accent-color);
   color: var(--primary-white-color);
+  border: 1px solid #EEEEEE;
 }
 
 .projects-list {
